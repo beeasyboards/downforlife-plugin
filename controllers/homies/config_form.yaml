@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Homie
+
+# Model Form Field configuration
+form: $/bedard/downforlife/models/homie/fields.yaml
+
+# Model Class name
+modelClass: Bedard\DownForLife\Models\Homie
+
+# Default redirect location
+defaultRedirect: bedard/downforlife/homies
+
+# Create page
+create:
+    title: Create Homie
+    redirect: bedard/downforlife/homies/update/:id
+    redirectClose: bedard/downforlife/homies
+
+# Update page
+update:
+    title: Edit Homie
+    redirect: bedard/downforlife/homies
+    redirectClose: bedard/downforlife/homies
+
+# Preview page
+preview:
+    title: Preview Homie

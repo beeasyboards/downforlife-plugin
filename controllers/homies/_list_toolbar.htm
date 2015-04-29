@@ -1,0 +1,22 @@
+<div data-control="toolbar">
+    <a
+        href="<?= Backend::url('bedard/downforlife/homies/create') ?>"
+        class="btn btn-primary oc-icon-plus">
+        Add Homie
+    </a>
+
+    <button
+        class="btn btn-default oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).request('onDelete', {
+            data: { checked: $('.control-list').listWidget('getChecked') }
+        })"
+        data-request-confirm="Are you sure?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.form.delete')) ?>
+    </button>
+
+</div>

@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: Name
+        span: left
+
+    created_at:
+        label: Date
+        comment: Leave blank to use today's date.
+        type: datepicker
+        mode: date
+        span: left
+
+    href:
+        label: Link to
+        span: left
+
+    is_new_window:
+        label: Open link in new window
+        type: switch
+        default: false
+
+    image:
+        label: Image
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260

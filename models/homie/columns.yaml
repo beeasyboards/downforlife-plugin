@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: ID
+        invisible: true
+        searchable: false
+
+    name:
+        label: Name
+        searchable: true
+
+    href:
+        label: Link
+        searchable: true
+
+    created_at:
+        label: Date
+        type: partial
+        path: ~/plugins/bedard/downforlife/models/homie/_created_at.htm
+        searchable: false
