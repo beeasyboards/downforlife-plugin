@@ -37,7 +37,7 @@ class Plugin extends PluginBase
                 'url'         => Backend::url('bedard/downforlife/homies'),
                 'icon'        => 'icon-users',
                 'permissions' => ['Bedard.DownForLife.*'],
-                'order'       => 300,
+                'order'       => 700,
 
                 'sideMenu' => [
                     'homies' => [
