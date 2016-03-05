@@ -13,9 +13,9 @@ class HomiesController extends Controller
      */
     public function index()
     {
-        return Homie::select(['name', 'href', 'is_new_window', 'created_at'])
+        return Homie::select(['id', 'name', 'href', 'is_new_window', 'created_at'])
             ->with(['image' => function($image) {
-                $image->select('attachment_id', 'disk_name', 'file_name', 'title', 'description');
+                $image->select(['attachment_id', 'disk_name', 'file_name']);
             }])
             ->orderBy('created_at', 'desc')
             ->get();

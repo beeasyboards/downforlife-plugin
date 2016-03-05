@@ -44,17 +44,13 @@ class Homie extends Model
 
     public function beforeSave()
     {
-        if (!$this->created_at)
+        if (!$this->created_at) {
             $this->created_at = date('Y-m-d H:i:s', time());
+        }
     }
 
     public function afterDelete()
     {
         $this->image->delete();
-    }
-
-    public function getDownSinceAttribute()
-    {
-        return date('F Y', strtotime($this->created_at));
     }
 }
