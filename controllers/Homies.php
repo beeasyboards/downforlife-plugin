@@ -1,8 +1,8 @@
-<?php namespace Bedard\DownForLife\Controllers;
+<?php namespace BeEasy\DownForLife\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
-use Bedard\DownForLife\Models\Homie;
+use BeEasy\DownForLife\Models\Homie;
 use Flash;
 
 /**
@@ -22,7 +22,7 @@ class Homies extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Bedard.DownForLife', 'downforlife', 'homies');
+        BackendMenu::setContext('BeEasy.DownForLife', 'downforlife', 'homies');
     }
 
     /**

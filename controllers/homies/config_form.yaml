@@ -6,25 +6,25 @@
 name: Homie
 
 # Model Form Field configuration
-form: $/bedard/downforlife/models/homie/fields.yaml
+form: $/beeasy/downforlife/models/homie/fields.yaml
 
 # Model Class name
-modelClass: Bedard\DownForLife\Models\Homie
+modelClass: BeEasy\DownForLife\Models\Homie
 
 # Default redirect location
-defaultRedirect: bedard/downforlife/homies
+defaultRedirect: beeasy/downforlife/homies
 
 # Create page
 create:
     title: Create Homie
-    redirect: bedard/downforlife/homies/update/:id
-    redirectClose: bedard/downforlife/homies
+    redirect: beeasy/downforlife/homies/update/:id
+    redirectClose: beeasy/downforlife/homies
 
 # Update page
 update:
     title: Edit Homie
-    redirect: bedard/downforlife/homies
-    redirectClose: bedard/downforlife/homies
+    redirect: beeasy/downforlife/homies
+    redirectClose: beeasy/downforlife/homies
 
 # Preview page
 preview:

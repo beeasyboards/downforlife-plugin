@@ -20,5 +20,5 @@ columns:
     created_at:
         label: Date
         type: partial
-        path: ~/plugins/bedard/downforlife/models/homie/_created_at.htm
+        path: ~/plugins/beeasy/downforlife/models/homie/_created_at.htm
         searchable: false

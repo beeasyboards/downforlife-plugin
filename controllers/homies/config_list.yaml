@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/bedard/downforlife/models/homie/columns.yaml
+list: $/beeasy/downforlife/models/homie/columns.yaml
 
 # Model Class name
-modelClass: Bedard\DownForLife\Models\Homie
+modelClass: BeEasy\DownForLife\Models\Homie
 
 # List Title
 title: Manage Homies
 
 # Link URL for each record
-recordUrl: bedard/downforlife/homies/update/:id
+recordUrl: beeasy/downforlife/homies/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

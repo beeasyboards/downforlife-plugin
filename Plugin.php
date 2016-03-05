@@ -1,4 +1,4 @@
-<?php namespace Bedard\DownForLife;
+<?php namespace BeEasy\DownForLife;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -19,7 +19,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Down For Life',
             'description' => 'Awesome homies who are down for life.',
-            'author'      => 'Scott Bedard',
+            'author'      => 'Be Easy',
             'icon'        => 'icon-users'
         ];
     }
@@ -34,32 +34,20 @@ class Plugin extends PluginBase
         return [
             'downforlife' => [
                 'label'       => 'Down For Life',
-                'url'         => Backend::url('bedard/downforlife/homies'),
+                'url'         => Backend::url('beeasy/downforlife/homies'),
                 'icon'        => 'icon-users',
-                'permissions' => ['Bedard.DownForLife.*'],
+                'permissions' => ['BeEasy.DownForLife.*'],
                 'order'       => 700,
 
                 'sideMenu' => [
                     'homies' => [
                         'label'         => 'Down For Life',
                         'icon'          => 'icon-users',
-                        'url'           => Backend::url('bedard/downforlife/homies'),
-                        'permissions'   => ['Bedard.DownForLife.access_homies'],
+                        'url'           => Backend::url('beeasy/downforlife/homies'),
+                        'permissions'   => ['BeEasy.DownForLife.access_homies'],
                     ],
                 ],
             ],
-        ];
-    }
-
-    /**
-     * Registers the frontend components
-     *
-     * @return array
-     */
-    public function registerComponents()
-    {
-        return [
-            'Bedard\DownForLife\Components\DownForLife' => 'downforlife',
         ];
     }
 }

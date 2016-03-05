@@ -1,4 +1,4 @@
-<?php namespace Bedard\DownForLife\Updates;
+<?php namespace BeEasy\DownForLife\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -8,7 +8,7 @@ class CreateHomiesTable extends Migration
 
     public function up()
     {
-        Schema::create('bedard_downforlife_homies', function($table)
+        Schema::create('beeasy_downforlife_homies', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -21,7 +21,7 @@ class CreateHomiesTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('bedard_downforlife_homies');
+        Schema::dropIfExists('beeasy_downforlife_homies');
     }
 
 }

@@ -1,4 +1,4 @@
-<?php namespace Bedard\DownForLife\Models;
+<?php namespace BeEasy\DownForLife\Models;
 
 use Model;
 
@@ -12,7 +12,7 @@ class Homie extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'bedard_downforlife_homies';
+    public $table = 'beeasy_downforlife_homies';
 
     /**
      * @var array Guarded fields
