@@ -17,7 +17,7 @@ class HomiesController extends Controller
             ->with(['image' => function($image) {
                 $image->select('attachment_id', 'disk_name', 'file_name', 'title', 'description');
             }])
-            ->orderBy('created_at')
+            ->orderBy('created_at', 'desc')
             ->get();
     }
 }
