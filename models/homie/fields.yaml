@@ -22,7 +22,7 @@ fields:
     is_new_window:
         label: Open link in new window
         type: switch
-        default: false
+        default: true
 
     image:
         label: Image
